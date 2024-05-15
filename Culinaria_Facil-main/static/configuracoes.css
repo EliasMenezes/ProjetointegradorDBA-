@@ -1,0 +1,1252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(12, 12, 12);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+/* color palettes */
+
+:root {
+    --primary-color: #d57119;
+    --secondary-color: #57B894;
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #969696;
+    --gray-2: #d3d3d3;
+    --card--: #fcdeae;
+    --check--: #fac08d;
+    --dark--: #222;
+    --darkform--: #5c5c5c;
+    --btn--excluir: #DB4437;
+    --lite--: #f4e1c4;
+    --pesquisa_input--: #fff7eb
+}
+
+/* call "body.mode" followed by the class or id to activate dark mode   */
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--lite--);
+
+}
+
+body.modo-escuro {
+    background-color: #222;
+    color: #fff;
+}
+
+
+body.modo-escuro label {
+    color: var(--white);
+
+}
+
+
+body.modo-escuro form {
+    background-color: var(--darkform--);
+}
+
+
+body.modo-escuro p {
+    color: var(--white--);
+}
+
+body.modo-escuro .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--white--);
+}
+
+
+
+body.modo-escuro .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+body.modo-escuro .container {
+    background-color: var(--darkform--);
+
+}
+
+body.modo-escuro .bg-body-tertiary {
+    --bs-bg-opacity: 0;
+}
+
+
+body.modo-escuro .d-flex {
+    background-color: var(--dark--);
+
+}
+
+
+
+body.modo-escuro header {
+
+    text-align: center;
+
+}
+
+
+body.modo-escuro .navbar-toggler-icon {
+    color: #1DA1F2;
+}
+
+
+
+body.modo-escuro .container {
+    background: var(--card--);
+}
+
+body.modo-escuro .form {
+    background: var(--card--);
+}
+
+
+body.modo-escuro .navbar-toggler {
+    background-color: var(--primary-color);
+}
+
+
+body.modo-escuro .dropdown-menu.show {
+    background-color: var(--dark--);
+}
+
+.dropdown-menu {
+    background-color: var(--lite--);
+}
+
+
+body.modo-escuro #acesso {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 0.9rem;
+    outline: none;
+    height: 2.5rem;
+    text-align: left;
+    border-radius: 8px;
+
+}
+
+
+
+
+
+body.modo-escuro svg {
+    color: var(--white);
+    width: 40px;
+    height: 30px;
+}
+
+
+body.modo-escuro th {
+    color: var(--white);
+}
+
+body.modo-escuro td {
+    color: var(--white);
+}
+
+
+body.modo-escuro .table>:not(caption)>*>* {
+    background-color: var(--dark---);
+}
+
+
+.svg-branco path,
+.svg-branco rect,
+.svg-branco circle,
+.svg-branco polygon,
+.svg-branco polyline,
+.svg-branco line {
+    fill: var(--white) !important;
+    stroke: var(--white) !important;
+}
+
+
+
+
+body.modo-escuro #buscar {
+    width: 9rem;
+
+    cursor: pointer;
+    color: var(--white);
+    font-size: 0.6rem;
+    outline: none;
+    height: 1.7rem;
+    text-align: center;
+    border-radius: 8px;
+    border-radius: .5rem;
+    border-color: var(--black);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark--);
+    border: 1px solid var(--check--);
+
+
+
+}
+
+
+body.modo-escuro h1 {
+    color: var(--white);
+
+}
+
+
+
+body.modo-escuro .dropzone-area {
+    background-color: var(--dark--);
+    border: 1px solid var(--lite--);
+
+
+}
+
+
+body.modo-escuro .dropzone-area label {
+    color: var(--white);
+}
+
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    display: flex;
+    justify-content: left;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10 rem;
+    margin-top: 10px;
+
+}
+
+.card {
+    background-color: #ac2020;
+    color: #000000;
+}
+
+body.modo-escuro .info {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    background-color: var(--dark--);
+}
+
+
+
+body.modo-escuro .table {
+    --bs-table-bg: var(--dark--);
+    color: var(--white--);
+
+}
+
+body.modo-escuro h2,
+body.modo-escuro .message,
+body.modo-escuro p {
+    color: var(--white);
+}
+
+body.modo-escuro footer p {
+    color: #fff;
+
+}
+
+
+/* end of dark mode */
+
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    display: flex;
+    width: 5rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+/* navbar */
+.nav-item {
+    display: flex;
+    justify-content: left;
+}
+
+/* option #menu dessabled */
+/*#menu {
+    display: flex;
+    justify-content: right;
+
+}
+ */
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+
+/* make navbar transparent */
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
+    --bs-tertiary-bg-rgb: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+
+/* defines characteristics of buttons */
+#acesso {
+    cursor: pointer;
+    color: var(--black);
+    font-size: 0.9rem;
+    outline: none;
+    height: 2.5rem;
+    text-align: left;
+    border-radius: 8px;
+}
+
+#acesso:hover {
+    background-color: var(--check--);
+}
+
+
+
+
+/* define with the collapse button */
+
+button.navbar-toggler {
+    background-color: var(--primary-color);
+}
+
+.navbar-toggler-icon {
+    background-color: var(--primary-color);
+
+}
+
+
+#buscar {
+    width: 9rem;
+
+    cursor: pointer;
+    color: var(--black);
+    font-size: 0.6rem;
+    outline: none;
+    height: 1.7rem;
+    text-align: center;
+    border-radius: 8px;
+    border-radius: .5rem;
+    border-color: var(--black);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: 1px solid var(--check--);
+
+}
+
+
+#buscar:hover {
+    background-color: var(--check--);
+}
+
+
+
+/* button teeth icon */
+svg {
+    width: 40px;
+    height: 30px;
+}
+
+.bntacesso {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* key for dark mode */
+
+#toggle-mode {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: left;
+    font-size: 0.8rem;
+
+}
+
+#toggle-mode label {
+    font-size: 0.9rem;
+}
+
+
+.form-switch .form-check-input {
+    /*     margin-left: -1.5em;
+ */
+    background-color: var(--white);
+}
+
+.btn-outline-success {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+
+}
+
+.form-switch {
+    margin-left: 1.2em;
+}
+
+
+/* color label*/
+.form-control {
+    height: 1.5rem;
+    font-size: 0.7rem;
+    background-color: var(--lite--);
+}
+
+input.form-control.me-2 {
+    font-size: 0.7rem;
+}
+
+
+/* search bar position */
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#editar-excluir {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 3.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 0.6rem;
+    outline: none;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+#editar-excluir:hover {
+    background-color: #a33f37;
+}
+
+
+
+
+#editar-excluir-red {
+    cursor: pointer;
+    width: 3.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--btn--excluir);
+    color: var(--white);
+    font-size: 0.6rem;
+    outline: none;
+    height: 2rem;
+    text-align: center;
+}
+
+#editar-excluir-red:hover {
+    background-color: #a33f37;
+}
+
+
+.navbar>.container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.abas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+
+
+.input-group {
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+
+
+input .input-group {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 8rem;
+}
+
+
+
+#addon-wrapping {
+    width: 5rem;
+}
+
+#registro_nome,
+#registro_email,
+#registro_cpf,
+#registro_senha,
+#senha_confirmar {
+    background-color: var(--pesquisa_input--);
+}
+
+
+
+
+
+
+
+
+
+
+
+#dadosnome {
+    width: 14rem;
+    height: 2.5rem;
+}
+
+#dadoscpf {
+    width: 14rem;
+    height: 2.5rem;
+}
+
+
+.opcao {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+
+}
+
+.opcao button {
+    cursor: pointer;
+    width: 10.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 0.7rem;
+    outline: none;
+    height: 2rem;
+    margin: 15px;
+    text-align: center;
+
+}
+
+
+.opcao button:hover {
+    background-color: #a33f37;
+}
+
+
+
+#editar-excluir-red {
+
+    cursor: pointer;
+    width: 3.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--btn--excluir);
+    color: var(--white);
+    font-size: 0.6rem;
+    outline: none;
+    height: 2rem;
+    text-align: center;
+
+
+}
+
+#editar-excluir-red:hover {
+    background-color: #a33f37;
+}
+
+
+
+
+#seguranca {
+    display: flex;
+    padding-left: 17rem;
+    padding-right: 17rem;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#seguranca input .form-control {
+    height: 3rem;
+}
+
+
+.input-group>.form-control {
+    height: 2.5rem;
+    width: 8rem;
+
+}
+
+#passwordField1 {
+    height: 2.5rem;
+
+}
+
+#password {
+    width: 100%;
+}
+
+.fa {
+    position: fixed;
+    margin: 10px;
+    z-index: 9999;
+}
+
+#eye1 {
+    position: absolute;
+    right: 15px;
+    top: 75%;
+    transform: translateY(-180%);
+    cursor: pointer;
+}
+
+
+#eye2 {
+    position: absolute;
+    right: 15px;
+    top: 75%;
+    transform: translateY(-180%);
+    cursor: pointer;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.input-container input, .form button {
+    outline: none;
+    border: 1px solid #595b5d;
+    margin: 8px 0;
+    justify-content: right;
+
+}
+
+
+label {
+    font-size: 0.7rem;
+
+}
+
+#receitas {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    width: 100%;
+}
+
+
+.tabela {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+.table {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: none;
+}
+
+
+td {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 0.7rem;
+
+
+}
+
+
+tr {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    font-size: 0.7rem;
+
+}
+
+th {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+
+}
+
+/* change background of config table */
+
+.table>:not(caption)>*>* {
+    background-color: var(--lite--);
+    width: 15rem;
+
+}
+
+
+
+.input-group-text {
+    font-size: 0.9rem;
+    width: 5rem;
+}
+
+
+#dadosnome {
+    font-size: 1rem;
+}
+
+#dadoscpf {
+    font-size: 1rem;
+
+}
+
+
+.tab-btn {
+
+    cursor: pointer;
+    width: 10.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 0.7rem;
+    outline: none;
+    height: 2rem;
+    margin: 15px;
+    text-align: center;
+
+}
+
+
+#tab-btn:hover {
+    background-color: #a33f37;
+}
+
+
+
+.dropzone-box {
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 36rem;
+    width: 100%;
+
+
+
+}
+
+
+.dropzone h2,
+.dropzone p {
+    font-size: 1rem;
+}
+
+
+.dropzone-box h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.dropzone-area {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    margin-top: 1rem;
+    min-height: 9rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    color: var(--primary);
+    cursor: pointer;
+    height: 12rem;
+}
+
+.dropzone-area [type="file"] {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 12rem;
+}
+
+.dropzone-area .file-upload-icon svg {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 0.5rem;
+    stroke: var(--primary);
+}
+
+.dropzone--over {
+    border-style: solid;
+    background-color: var(--black);
+}
+
+.dropzone-actions {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid var(--black);
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.dropzone-actions button {
+    flex-grow: 1;
+    /*  min-height: 1rem; */
+    font-size: 1.2rem;
+}
+
+.dropzone-actions button:hover {
+    text-decoration: underline;
+}
+
+.dropzone-actions button[type='reset'] {
+    background-color: transparent;
+    border: 1px solid var(--gray);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.dropzone-actions button[type='submit'] {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.dropzone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+
+#registro_senha {
+    width: 17rem;
+}
+
+#senha_confirmar {
+    width: 17rem;
+
+}
+
+/* .dropzone-area{
+    background-image: url(/imgs/Imagem1cadastre-se.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+ */
+
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer {
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding-top: 5rem;
+}
+
+
+
+
+footer p {
+    font-size: 0.8rem;
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--primary-color);
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #seguranca {
+        display: flex;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #seguranca input .form-control {
+        height: 3rem;
+    }
+
+
+    .tabela {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+
+    #receitas {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 2px;
+
+    }
+
+    td {
+        font-size: 0.8rem;
+
+
+    }
+
+    tr {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    .menu-table {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+
+
+    .table {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: none;
+
+    }
+
+    tbody {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
+        font-size: 2px;
+        justify-content: left;
+
+    }
+
+    #editar-excluir {
+        cursor: pointer;
+        width: 3.5rem;
+        border: none;
+        border-radius: .5rem;
+        background-color: var(--primary-color);
+        color: var(--white);
+        font-size: 0.6rem;
+        outline: none;
+        height: 2rem;
+        text-align: center;
+    }
+
+    #editar-excluir:hover {
+        background-color: #a33f37;
+    }
+
+
+
+
+    #editar-excluir-red {
+        cursor: pointer;
+        width: 3.5rem;
+        border: none;
+        border-radius: .5rem;
+        background-color: var(--btn--excluir);
+        color: var(--white);
+        font-size: 0.6rem;
+        outline: none;
+        height: 2rem;
+        text-align: center;
+    }
+
+    #editar-excluir-red:hover {
+        background-color: #a33f37;
+    }
+
+
+
+
+
+    .nome-receita {
+        text-align: left;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        left: 0;
+
+    }
+
+
+
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: var(--primary-color);
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .form-switch {
+        margin-left: 0.5em;
+    }
+
+
+    .tabela {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+
+    body.modo-escuro .info {
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    #editar-excluir a {
+        width: 100%;
+    }
+
+
+    .dropzone-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .dropzone-area {
+        width: 80%;
+        padding: 1rem;
+        position: relative;
+        margin-top: 1rem;
+        min-height: 8rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid var(--black);
+        border-radius: 1rem;
+        color: var(--primary);
+        cursor: pointer;
+        height: 8rem;
+    }
+
+
+    .table>:not(caption)>*>* {
+        background-color: var(--lite--);
+        width: 4rem;
+
+    }
+
+
+    button .tab-btn {
+        font-size: 0.7rem;
+        width: 8rem;
+        margin: 0.2rem;
+    }
+
+
+    tr {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+
+    td.nome-receita {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        text-align: left;
+        width: 10rem;
+    }
+
+
+
+
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+
+}
